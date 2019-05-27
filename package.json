@@ -1,0 +1,26 @@
+{
+  "name": "next-hackernews",
+  "version": "1.0.0",
+  "description": "Hacker news clone made with Next",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvgiv/next-hackernews.git"
+  },
+  "author": "John G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvgiv/next-hackernews/issues"
+  },
+  "homepage": "https://github.com/jvgiv/next-hackernews#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

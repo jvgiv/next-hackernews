@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-fetch'
 import Error from 'next/error'
 import StoryList from '../components/StoryList'
+import Layout from '../components/Layout'
 
 class Index extends React.Component {
     
@@ -25,10 +26,9 @@ class Index extends React.Component {
             return <Error statusCode={503} />
         } 
         return (
-            <>
-                <h1>hacker next</h1>
+            <Layout title="Hacker Next Clone" description="A Hacker News clone made with NextJS">
                 <StoryList stories={stories} />
-            </>
+            </Layout>
         )
     }
 }

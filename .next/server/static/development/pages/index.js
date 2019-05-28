@@ -2032,14 +2032,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! isomorphic-fetch */ "isomorphic-fetch");
-/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
-/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _components_StoryList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/StoryList */ "./components/StoryList.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! isomorphic-fetch */ "isomorphic-fetch");
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/error */ "./node_modules/next/error.js");
+/* harmony import */ var next_error__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_error__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_StoryList__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/StoryList */ "./components/StoryList.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_13__);
 
 
 
@@ -2048,6 +2052,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "C:\\Users\\user\\Desktop\\GitHubProjectStuff\\next-hackernews\\pages\\index.js";
+
+
 
 
 
@@ -2068,81 +2074,124 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Index, [{
     key: "render",
     value: function render() {
-      var stories = this.props.stories;
+      var _this$props = this.props,
+          page = _this$props.page,
+          stories = _this$props.stories;
 
       if (stories.length === 0) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_error__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_error__WEBPACK_IMPORTED_MODULE_10___default.a, {
           statusCode: 503,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 26
+            lineNumber: 30
           },
           __self: this
         });
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_12__["default"], {
         title: "Hacker Next Clone",
         description: "A Hacker News clone made with NextJS",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 33
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_StoryList__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_StoryList__WEBPACK_IMPORTED_MODULE_11__["default"], {
         stories: stories,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 34
         },
         __self: this
-      }));
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("footer", {
+        className: "jsx-715424901",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, page === 1 ? null : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_13___default.a, {
+        href: "/?page=".concat(page - 1),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        className: "jsx-715424901",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Previous Page (", page - 1, ")")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_13___default.a, {
+        href: "/?page=".concat(page + 1),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        className: "jsx-715424901",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }, "Next Page (", page + 1, ")"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        id: "715424901",
+        __self: this
+      }, "footer.jsx-715424901{padding:1em;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;}footer.jsx-715424901 a.jsx-715424901{font-weight:bold;-webkit-text-decoration:none;text-decoration:none;color:black;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcdXNlclxcRGVza3RvcFxcR2l0SHViUHJvamVjdFN0dWZmXFxuZXh0LWhhY2tlcm5ld3NcXHBhZ2VzXFxpbmRleC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4QzRCLEFBR3FDLEFBS0ssWUFKSixLQUtRLGtEQUNULFlBQ2hCLE9BTmlDLDJIQUNqQyIsImZpbGUiOiJDOlxcVXNlcnNcXHVzZXJcXERlc2t0b3BcXEdpdEh1YlByb2plY3RTdHVmZlxcbmV4dC1oYWNrZXJuZXdzXFxwYWdlc1xcaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZmV0Y2ggZnJvbSAnaXNvbW9ycGhpYy1mZXRjaCdcclxuaW1wb3J0IEVycm9yIGZyb20gJ25leHQvZXJyb3InXHJcbmltcG9ydCBTdG9yeUxpc3QgZnJvbSAnLi4vY29tcG9uZW50cy9TdG9yeUxpc3QnXHJcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vY29tcG9uZW50cy9MYXlvdXQnXHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuXHJcbmNsYXNzIEluZGV4IGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuICAgIFxyXG4gICAgc3RhdGljIGFzeW5jIGdldEluaXRpYWxQcm9wcyh7IHJlcSwgcmVzLCBxdWVyeSB9KSB7XHJcbiAgICAgICAgbGV0IHN0b3JpZXM7XHJcbiAgICAgICAgbGV0IHBhZ2U7XHJcblxyXG4gICAgICAgIHRyeSB7XHJcbiAgICAgICAgICAgIHBhZ2UgPSBOdW1iZXIocXVlcnkucGFnZSkgfHwgMTtcclxuICAgICAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChgaHR0cHM6Ly9ub2RlLWhuYXBpLmhlcm9rdWFwcC5jb20vbmV3cz9wYWdlPSR7cGFnZX1gKTtcclxuICAgICAgICAgICAgc3RvcmllcyA9IGF3YWl0IHJlc3BvbnNlLmpzb24oKTtcclxuICAgICAgICB9IGNhdGNoIChlcnJvcikge1xyXG4gICAgICAgICAgICBjb25zb2xlLmxvZyhlcnJvcilcclxuICAgICAgICAgICAgc3RvcmllcyA9IFtdO1xyXG4gICAgICAgIH1cclxuXHJcblxyXG4gICAgICAgIHJldHVybiB7IHBhZ2UsIHN0b3JpZXMgfVxyXG4gICAgfVxyXG5cclxuICAgIHJlbmRlcigpIHtcclxuICAgICAgICBjb25zdCB7IHBhZ2UsIHN0b3JpZXMgfSA9IHRoaXMucHJvcHNcclxuXHJcbiAgICAgICAgaWYgKHN0b3JpZXMubGVuZ3RoID09PSAwKSB7XHJcbiAgICAgICAgICAgIHJldHVybiA8RXJyb3Igc3RhdHVzQ29kZT17NTAzfSAvPlxyXG4gICAgICAgIH0gXHJcbiAgICAgICAgcmV0dXJuIChcclxuICAgICAgICAgICAgPExheW91dCB0aXRsZT1cIkhhY2tlciBOZXh0IENsb25lXCIgZGVzY3JpcHRpb249XCJBIEhhY2tlciBOZXdzIGNsb25lIG1hZGUgd2l0aCBOZXh0SlNcIj5cclxuICAgICAgICAgICAgICAgIDxTdG9yeUxpc3Qgc3Rvcmllcz17c3Rvcmllc30gLz5cclxuXHJcbiAgICAgICAgICAgICAgICA8Zm9vdGVyPlxyXG4gICAgICAgICAgICAgICAgICAgIHtwYWdlID09PSAxID8gbnVsbCA6IFxyXG4gICAgICAgICAgICAgICAgICAgIDxMaW5rIGhyZWY9e2AvP3BhZ2U9JHtwYWdlIC0gMX1gfT5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGE+UHJldmlvdXMgUGFnZSAoe3BhZ2UgLSAxfSk8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICA8TGluayBocmVmPXtgLz9wYWdlPSR7cGFnZSArIDF9YH0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxhPk5leHQgUGFnZSAoe3BhZ2UgKyAxfSk8L2E+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPlxyXG4gICAgICAgICAgICAgICAgPC9mb290ZXI+XHJcblxyXG4gICAgICAgICAgICAgICAgPHN0eWxlIGpzeD57YFxyXG4gICAgICAgICAgICAgICAgICAgIGZvb3RlciB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6IDFlbTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICAgICAgICAgICAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIGZvb3RlciBhIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6IGJsYWNrO1xyXG4gICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIGB9PC9zdHlsZT5cclxuICAgICAgICAgICAgPC9MYXlvdXQ+XHJcbiAgICAgICAgKVxyXG4gICAgfVxyXG59XHJcblxyXG5leHBvcnQgZGVmYXVsdCBJbmRleCJdfQ== */\n/*@ sourceURL=C:\\Users\\user\\Desktop\\GitHubProjectStuff\\next-hackernews\\pages\\index.js */"));
     }
   }], [{
     key: "getInitialProps",
     value: function () {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
       /*#__PURE__*/
-      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var stories, response;
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
+        var req, res, query, stories, page, response;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.prev = 0;
-                _context.next = 3;
-                return isomorphic_fetch__WEBPACK_IMPORTED_MODULE_8___default()("https://node-hnapi.herokuapp.com/news?page=1");
+                req = _ref.req, res = _ref.res, query = _ref.query;
+                _context.prev = 1;
+                page = Number(query.page) || 1;
+                _context.next = 5;
+                return isomorphic_fetch__WEBPACK_IMPORTED_MODULE_9___default()("https://node-hnapi.herokuapp.com/news?page=".concat(page));
 
-              case 3:
+              case 5:
                 response = _context.sent;
-                _context.next = 6;
+                _context.next = 8;
                 return response.json();
 
-              case 6:
+              case 8:
                 stories = _context.sent;
-                _context.next = 13;
+                _context.next = 15;
                 break;
 
-              case 9:
-                _context.prev = 9;
-                _context.t0 = _context["catch"](0);
+              case 11:
+                _context.prev = 11;
+                _context.t0 = _context["catch"](1);
                 console.log(_context.t0);
                 stories = [];
 
-              case 13:
+              case 15:
                 return _context.abrupt("return", {
+                  page: page,
                   stories: stories
                 });
 
-              case 14:
+              case 16:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[0, 9]]);
+        }, _callee, null, [[1, 11]]);
       }));
 
-      function getInitialProps() {
+      function getInitialProps(_x) {
         return _getInitialProps.apply(this, arguments);
       }
 
@@ -2151,7 +2200,7 @@ function (_React$Component) {
   }]);
 
   return Index;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 

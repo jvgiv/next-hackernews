@@ -1,26 +1,22 @@
 {
-  "name": "next-hackernews",
+  "name": "hacker-next",
   "version": "1.0.0",
-  "description": "Hacker news clone made with Next",
+  "description": "A Hacker News clone made with Next.js",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build",
+    "deploy": "now --public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jvgiv/next-hackernews.git"
-  },
-  "author": "John G",
+  "author": "Reed Barger",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jvgiv/next-hackernews/issues"
-  },
-  "homepage": "https://github.com/jvgiv/next-hackernews#readme",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
-    "next": "^8.1.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "next": "^7.0.2",
+    "node": "^12.3.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "sw-precache-webpack-plugin": "^0.11.5"
   }
 }
